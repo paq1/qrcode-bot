@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    image: ppaquin/qrcode-bot:latest
+    environment:
+      - DISCORD_TOKEN=xxx
+    networks:
+      - qrcode_bot-network
+networks:
+  qrcode_bot-network:
